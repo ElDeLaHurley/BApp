@@ -4,6 +4,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow-x: hidden;
 
 
 }
@@ -21,8 +22,8 @@
     margin-top: 1px;
     margin-right: -31px;
     margin-left: 0px;
-    background-color: rgba(0,0,0,0.5);
-     font-weight: 600;
+    background-color: rgba(0,0,0,0.6);
+    font-weight: 600;
 }
 #Busqueda::placeholder{
     color: white;
@@ -30,29 +31,31 @@
 }
 #Btn_buscar label{
     cursor: pointer;
-    
 }
 
 #view-catalogo button{
     background-color: transparent;
-    border-left: none !important;
-    border-right: none !important;
+    
     margin-top: 0px;
     border-bottom: none;
     border-top: none;
     border-radius: 20px;
     text-align: center;
 }
+#Btn_buscar, #btn_return{
+    border-left: none !important;
+    border-right: none !important;
+}
 .item{
     border: 1px solid white;
-    height: 150px;
-    margin-left:15px;
-    margin-right: 15px;
+    max-height: 150px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
-    padding: 15px;
-    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    background-color: rgba(0,0,0,0.6);
     cursor: pointer;
 }
 .item img{
@@ -61,11 +64,29 @@ margin-bottom: 0px;
 }
 #Finalizar{
     text-align: center;
-    padding-top: 11px;
+    padding-top: 6px;
     color:white;
+    cursor: pointer;
+    height: 40px;
+    font-weight: 600;
+    border: 1px solid white !important; 
+    border: 1px solid white !important; 
+    border-radius: 0px !important;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+#Finalizar:hover{
+    background-color: rgba(34,139,34,0.7);
 }
 #btn_return{
+    cursor: pointer;
     margin-top: 6px !important;
+}
+#btn_return label{
+    cursor: pointer;
 }
 .item p{
     margin-bottom: 0px;
@@ -73,24 +94,88 @@ margin-bottom: 0px;
     color: White;
 }
 #Total{
-    margin-left: 15px;
+    margin-left: 0px;
     margin-bottom: 0px;
 }
 #precio_total{
-    margin-left: 15px;
+    margin-left: 0px;
 }
 #todo_ese_pedo{
-    padding: 15px;
+    padding: 10px;
     text-align: right;
     position: absolute;
     width: 100%;
     bottom: 0px;
     border-top: 2px solid white;
-    background-color: rgba(0,0,0,0.5)
+    background-color: rgba(0,0,0,0.6);
+}
+
+#item_cat{
+    animation-duration: .2s;
+}
+
+.itemmarcas{
+    border: 1px solid white;
+    max-height: 103px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 8px 3px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.itemmarcas p, .producto p{
+    margin-bottom: 0px;
+}
+.producto{
+    border: 1px solid white;
+    max-height: 103px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#cat_marcas{
+    padding: 15px;
+    text-align: center;
+    margin-top: 23px;
+    display: none;
+    animation-duration: .2s;
+}
+#cat_productos{
+    padding: 10px;
+    text-align: center;
+    margin-top: 23px;
+    display: none;
+    animation-duration: .2s;
+   
+
 }
 #cabeza{
     padding: 9px;
 }
+
+.item_producto .btn_quantity{
+margin-bottom: 10px;
+}
+.item_producto .item_price{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.item_producto .btn_quantity label{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  
+}
+.item_producto .num_quantity{
+    color: white;
+    font-weight: 600;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
 @media(min-width:720px){
     .item{
         height: 250px;
