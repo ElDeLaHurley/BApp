@@ -138,18 +138,16 @@
             
             $(".item, .itemmarcas").on("click", function(){
                     posicion++;
-                    alert(posicion);
-                });
+
+            });
             $("#btn_return").on("click", function(){
                    if(posicion > 0){
                         posicion--;
-                        alert(posicion);
+
                      
-                   }
-                   
-                    
-                });
-            
+               }
+                     
+            });
             
             $("#btn_cerveza").on("click", function(){
                     $('#item_cat').animateCss('slideOutleft', function() {
@@ -164,6 +162,7 @@
                         $('#cat_marcas').css("display","none");
                         $('#item_cat').css("display","block");
                         $('#item_cat').animateCss('slideInLeft');
+                    
                 });
             });
             $("#btn_tecate").on("click", function(){
@@ -171,6 +170,7 @@
                         $('#cat_marcas').css("display","none");
                         $('#cat_productos').css("display","block");
                         $('#cat_productos').animateCss('slideInRight');
+                        
                 });
             });
             $("#btn_budlight").on("click", function(){
@@ -178,6 +178,7 @@
                         $('#cat_marcas').css("display","none");
                         $('#cat_productos').css("display","block");
                         $('#cat_productos').animateCss('slideInRight');
+                        
                 });
             });
             $("#btn_heineken").on("click", function(){
@@ -185,6 +186,7 @@
                         $('#cat_marcas').css("display","none");
                         $('#cat_productos').css("display","block");
                         $('#cat_productos').animateCss('slideInRight');
+                        
                 });
             });
             $("#btn_modelo").on("click", function(){
@@ -192,6 +194,7 @@
                         $('#cat_marcas').css("display","none");
                         $('#cat_productos').css("display","block");
                         $('#cat_productos').animateCss('slideInRight');
+                        
                 });
             });
             
